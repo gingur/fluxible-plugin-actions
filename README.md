@@ -1,12 +1,15 @@
 # fluxible-plugin-actions
-Provide actions via context to your fluxible application
+Provide actions via context to your [fluxible](https://github.com/yahoo/fluxible) application
 
-Install
------
+##Install
 Add the package
-  npm install --save fluxible-plugin-actions
 
-Add to your app
+```bat
+npm install --save fluxible-plugin-actions
+```
+
+
+Add to your [app](https://github.com/yahoo/fluxible/blob/master/docs/api/Fluxible.md)
 
 ```javascript
 var actionPlugin = require('fluxible-plugin-actions');
@@ -15,7 +18,8 @@ var app = require('...');
 app.plug(actionPlugin());
 ```
 
-Add to your context
+
+Add to your app [context](https://github.com/yahoo/fluxible/blob/master/docs/api/FluxibleContext.md)
 
 ```javascript
 var app = require('...');
@@ -26,7 +30,8 @@ var context = app.createContext({
   });
 ```
 
-Enable in your component context
+
+Enable in your component [context](https://github.com/yahoo/fluxible/blob/master/docs/api/addons/provideContext.md)
 
 ```javascript
 var React = require('react');
@@ -36,9 +41,9 @@ var Application = React.createClass({...});
 Application = provideContext(Application, { 'getAction': React.PropTypes.func });
 ```
 
-Context
------
-Add to your component contextTypes
+
+##Context
+Add to your component [contextTypes](https://github.com/yahoo/fluxible/blob/master/docs/api/Components.md#component-context)
 
 ```javascript
 var React = require('react');
