@@ -1,5 +1,5 @@
 # fluxible-plugin-actions
-Provide actions via context to your [fluxible](https://github.com/yahoo/fluxible) application
+Provide action creators via context to your [fluxible](https://github.com/yahoo/fluxible) application
 
 ##Install
 Add the package
@@ -16,6 +16,17 @@ var actionPlugin = require('fluxible-plugin-actions');
 var app = require('...');
 
 app.plug(actionPlugin());
+/* or */
+app.plug(actionPlugin({
+    actions: {
+        'ACTION_NAME': function (context, payload, done) {
+            ...
+            context.dispatch('STORE_ACTION', payload);
+            ...
+            done(); // Not available for component actions
+        }
+    }
+});
 ```
 
 
