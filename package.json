@@ -3,17 +3,27 @@
   "version": "0.0.1",
   "author": "Troy Rhinehart <troy.rhinehart@gmail.com>",
   "description": "Provide actions via context to your fluxible application",
+  "homepage": "https://github.com/gingur/fluxible-plugin-actions#readme",
   "keywords": [
     "fluxible",
-    "actions"
+    "plugins",
+    "actions",
+    "flux"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:gingur/fluxible-plugin-actions.git"
+    "url": "git+ssh://git@github.com/gingur/fluxible-plugin-actions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gingur/fluxible-plugin-actions/issues"
   },
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "lodash.assign": "*"
+    "lodash.assign": "^3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
