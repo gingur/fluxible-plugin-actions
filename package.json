@@ -1,6 +1,6 @@
 {
   "name": "fluxible-plugin-actions",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Troy Rhinehart <troy.rhinehart@gmail.com>",
   "description": "Provide actions via context to your fluxible application",
   "homepage": "https://github.com/gingur/fluxible-plugin-actions#readme",
