@@ -38,7 +38,7 @@ var actions = require('...');
 var context = app.createContext({
     req: req,
     actions: actions
-  });
+});
 ```
 
 
